@@ -45,6 +45,16 @@ public class UnityChanController : MonoBehaviour
         //シーン中のstateTextオブジェクトを取得（追加）
         this.stateText = GameObject.Find("GameResultText");
 
+        this.stateText = GameObject.Find("GameResultText");
+        if (this.stateText == null)
+        {
+            Debug.LogError("this.stateText is null");
+        }
+        else
+        {
+            Debug.Log("this.stateText is not null");
+        }
+
         //シーン中のscoreTextオブジェクトを取得（追加）
         this.scoreText = GameObject.Find("ScoreText");
     }
